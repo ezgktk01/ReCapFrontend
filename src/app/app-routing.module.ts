@@ -8,6 +8,11 @@ import { RentalComponent } from './components/rental/rental.component';
 
 const routes: Routes = [
   {
+    path: '',
+    pathMatch:'full',
+    component: CarComponent,
+  },
+  {
     path: 'brand',
     component: BrandComponent,
   },
@@ -23,6 +28,18 @@ const routes: Routes = [
     path: 'rental',
     component: RentalComponent,
   },
+  {
+    path: 'cars/color/:colorId',
+    component: CarComponent,
+  },
+  {
+    path: 'cars/brand/:brandId',
+    component: CarComponent,
+  },
+  {
+    path: 'cars/details/:carId',
+    component: CarComponent,
+  }
  
 ];
 
